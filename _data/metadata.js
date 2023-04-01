@@ -1,11 +1,13 @@
 module.exports = {
-	"title": "Eleventy Base Blog v8",
-	"url": "https://example.com/",
-	"language": "en",
-	"description": "I am writing about my experiences as a naval navel-gazer.",
-	"author": {
-		"name": "Your Name Here",
-		"email": "youremailaddress@example.com",
-		"url": "https://example.com/about-me/"
-	}
-}
+	title: "camagu.io",
+	url: "https://camagu.io/",
+	language: "en",
+	description:
+		"I am writing about my experiences as a Tech Manager and Web UI Developer.",
+	author: {
+		name: "Camilo Aguilar",
+		email: "camilo.aguilar.r@gmail.com",
+		url: "https://camagu.io/",
+	},
+	googleTagId: process.env.GOOGLE_TAG_ID
+};
