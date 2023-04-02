@@ -1,5 +1,5 @@
 ---
-title: Clean Code Chapter 1 Takeaways
+title: Clean Code Chapter 1 Notes and Thoughts
 description: Notes and thought on the first chapter of Robert C. Martin's seminal book "Clean Code".
 date: 2023-03-30
 tags:
@@ -7,32 +7,17 @@ tags:
   - book notes
 ---
 
-At work we started a book club to build the capacities of our teams. The first book we picked is the seminal work by Robert C. Martin _<a href="https://amzn.to/3lVl9zx" target="_blank" rel="noopener">Clean Code: A Handbook of Agile Software Craftsmanship</a>_. This article is part of a series where I record my thoughts and notes of each chapter.
-
-_If you decide to buy the book, please consider using the links in this article. I receive a small commission that helps me run this blog._
-
-<script type="text/javascript">
-amzn_assoc_tracking_id = "camaguio-20";
-amzn_assoc_ad_mode = "manual";
-amzn_assoc_ad_type = "smart";
-amzn_assoc_marketplace = "amazon";
-amzn_assoc_region = "US";
-amzn_assoc_design = "enhanced_links";
-amzn_assoc_asins = "0132350882";
-amzn_assoc_placement = "adunit";
-amzn_assoc_linkid = "10a213b265c6b2df16629aa16d4ac6e3";
-</script>
-<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+{% include "clean-code-banner.njk" %}
 
 ## Chapter Comments
 
 ### On “There Will Be Code”
 
-In 2088 R.C. Martin described how code was expected to become obsolete. It’d be generated instead of written, and business people would build products by writing specifications. He attributed it to the growing number of high-level abstractions and domain-specific languages at the time.
+In 2008 R.C. Martin described how code was expected to become obsolete. It’d be generated instead of written, and business people would build products by writing specifications. He attributed it to the growing number of high-level abstractions and domain-specific languages at the time.
 
 A very similar thought exists today because of the capabilities of AI. Some speculate that software developers will eventually be redundant and that business people will create products by describing them to a chatbot.
 
-Some are skeptical of such claims. There has always been a new technology that would take out the intermediary between business and product. But software developer profession is still strong.
+Some are skeptical of such claims. There has always been a new technology that would take out the intermediary between business and product. But software developer profession is still strong.`
 
 R.C. Martin's argument was that programs can't run on vague descriptions. Machines need detailed and accurate specifications, which _are code_.
 
@@ -155,16 +140,3 @@ The book _<a href="https://amzn.to/3lVl9zx" target="_blank" rel="nooponer">Clean
 ### Conclusion
 
 The book provides the thought processes of good programmers and the tricks, techniques, and tools that they use. Mastery should be conquered by practice.
-
-<script type="text/javascript">
-amzn_assoc_tracking_id = "camaguio-20";
-amzn_assoc_ad_mode = "manual";
-amzn_assoc_ad_type = "smart";
-amzn_assoc_marketplace = "amazon";
-amzn_assoc_region = "US";
-amzn_assoc_design = "enhanced_links";
-amzn_assoc_asins = "0132350882";
-amzn_assoc_placement = "adunit";
-amzn_assoc_linkid = "10a213b265c6b2df16629aa16d4ac6e3";
-</script>
-<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
