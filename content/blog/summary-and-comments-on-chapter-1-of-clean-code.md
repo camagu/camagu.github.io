@@ -1,6 +1,6 @@
 ---
-title: Clean Code Chapter 1 Notes and Thoughts
-description: Notes and thought on the first chapter of Robert C. Martin's seminal book "Clean Code".
+title: Summary and Comments on Chapter 1 of "Clean Code"
+description: Summary and comments on the first chapter of Robert C. Martin's seminal book "Clean Code". I comment on why I don't like the term "clean code", why I'm cautious with The Boy Scout Rule, and how unmaintainable code is not solely introduced by developers not pushing back on tight deadlines.
 date: 2023-03-30
 tags:
   - clean code
@@ -17,21 +17,21 @@ In 2008 R.C. Martin described how code was expected to become obsolete. It’d b
 
 A very similar thought exists today because of the capabilities of AI. Some speculate that software developers will eventually be redundant and that business people will create products by describing them to a chatbot.
 
-Some are skeptical of such claims. There has always been a new technology that would take out the intermediary between business and product. But software developer profession is still strong.`
+Some are skeptical of such claims. There has always been a new technology that would take out the intermediary between business and product. But software development is still strong.
 
-R.C. Martin's argument was that programs can't run on vague descriptions. Machines need detailed and accurate specifications, which _are code_.
+R.C. Martin's argument against the idea of code becoming obsolete was that programs can't run on vague descriptions. Machines need detailed and accurate specifications, which _are code_.
 
-Could AI also generate effective software from vague language? And then, would this vague language be considered code? Or will vague language not be effective at all?
+Will AI generate effective software from vague language? Will vague language be considered code? Or will vague language not be effective at all?
 
 I’m far from knowledgeable to have an informed opinion, but there’s no doubt AI will have a significant impact on how we build products and approach code.
 
 ### On “Bad Code” and “Clean Code”
 
-I find the term “Clean Code” to be evocative. For me, it encapsulates the idea that code could be treated as art.
+I find the term “Clean Code” to be evocative. For me, it encapsulates the idea that code is a discipline or a form of craft.
 
 I find the term moralizing as well. It is about “clean” and “dirty”, “good” and “bad”, “beautiful” and “ugly", and “virtuous” and “evil”. The concept rings hollow if developers write "clean code" for virtuosity's sake.
 
-At the end of the day, as mentioned by R.C. Martin, the goal is to improve developers’ efficiency. For developers to be efficient, the code they work on has to be scalable. For code to be scalable it has to be maintainable.
+At the end of the day, as mentioned by R.C. Martin, the goal is to improve developers’ efficiency. For developers to be efficient, the code has to be scalable. For code to be scalable it has to be maintainable.
 
 Thus, I prefer the terms “maintainable code” or “scalable code”. They are intent-revealing (_wink_ _wink_), functional, and don’t have the moralizing connotation of good and bad.
 
@@ -39,7 +39,7 @@ Thus, I prefer the terms “maintainable code” or “scalable code”. They ar
 
 One of the reasons code becomes unmaintainable is because the developers don’t communicate the risks of rushing in work. They don’t want to look incompetent, non-collaborative, or lazy.
 
-Other reason is that not all developers are capable or willing to deliver maintainable code. Team members have different skill sets, priorities, values, and beliefs. Most developers consider their code immaculate when it's not. Others won’t even try it because they consider it a waste of time or don’t enjoy what they do. Many just lack the experience and knowledge.
+Other reason is that not all developers are capable or willing to deliver maintainable code. Team members have different skill sets, priorities, values, and beliefs. Most developers consider their code is immaculate when it isn't. Others won’t even try it because they consider it a waste of time or don’t enjoy what they do. Many lack the experience and knowledge.
 
 Maintainable code is not only a technical issue but also a social one. It requires negotiation, conflict resolution and coaching for teams to agree what maintainable code is and how to achieve it.
 
@@ -135,7 +135,7 @@ Leave the campground cleaner than you found it. This way, the codebase gets bett
 
 ### Prequel and Principles
 
-The book _<a href="https://amzn.to/3lVl9zx" target="_blank" rel="nooponer">Clean Code</a>_ is a prequel to _<a href="https://amzn.to/3nAsCob" target="_blank" rel="nooponer">Agile Software Development: Principles, Patterns, and Practices][agile-software-development</a>_ (PPP). PPP explores the principles of OO and describes the SOLID principles.
+The book _<a href="https://amzn.to/3lVl9zx" target="_blank" rel="nooponer">Clean Code</a>_ is a prequel to _<a href="https://amzn.to/3nAsCob" target="_blank" rel="nooponer">Agile Software Development: Principles, Patterns, and Practices</a>_ (PPP). PPP explores the principles of OO and describes the SOLID principles.
 
 ### Conclusion
 
