@@ -9,7 +9,8 @@
         {% endif %}
       </a>
     </h2>
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL dd, yyyy") }}</time>
+    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL dd, yyyy") }}</time>
     <p>{{ post.data.description }}</p>
+    <a href="{{ post.url }}">Read more ▶</a>
   </article>
 {% endfor %}

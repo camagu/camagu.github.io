@@ -33,7 +33,7 @@
 	--font-size-175: 1.75rem;
 	--font-size-200: 2rem;
 
-	--spacing-100: calc(var(--font-size-100) * var(--line-height-mod));
+	--spacing-100: calc(1rem * var(--line-height-mod));
 	--spacing-200: calc(var(--spacing-100) * 2);
 	--spacing-300: calc(var(--spacing-100) * 3);
 	--spacing-400: calc(var(--spacing-100) * 4);
@@ -68,13 +68,16 @@ body {
 	color: var(--text-color);
 	background-color: var(--background-color);
 	line-height: var(--line-height-mod);
-	font-size: large;
+	font-size: 100%;
 }
 html {
 	overflow-y: scroll;
+	/* background-size: 100% calc(var(--spacing-100) / 4);
+	background-image: linear-gradient(to bottom, #eee 1px, transparent 1px); */
 }
 body {
 	max-width: calc(60ch + var(--spacing-100) * 2);
+	background: transparent;
 }
 
 header,
@@ -132,8 +135,9 @@ h6 {
 p {
 	margin: var(--spacing-100) 0;
 }
-p:last-child {
-	margin-bottom: 0;
+
+time {
+	font-size: var(--font-size-75);
 }
 
 li {
@@ -187,14 +191,12 @@ code {
 	word-break: break-all;
 }
 
-/* Header */
+/* Branding */
 .branding {
-	align-items: start;
 	margin-top: var(--spacing-200);
 	margin-bottom: var(--spacing-200);
 }
 .branding__title {
-	font-size: 1rem;
 	font-weight: 700;
 }
 .branding__title:link:not(:hover) {
@@ -202,7 +204,7 @@ code {
 }
 .branding__tagline {
 	margin: 0;
-	font-size: 0.8125em;
+	font-size: var(--font-size-75);
 }
 
 /* Posts list */
@@ -262,14 +264,14 @@ h2 + .header-anchor {
 	font-size: 1.5em;
 }
 
-/* Affiiliate Banner */
+/* Affiliate Banner */
 .affiliate-banner {
 	display: grid;
 	gap: 1em;
 	grid-template-columns: auto 1fr;
 	grid-template-rows: auto 1fr;
 	grid-template-areas: "cover disclaimer" "cover call-to-action";
-	height: calc(160 / var(--spacing-100) * var(--spacing-100));
+	height: calc(160 / var(--spacing-100) * var(--spacing-100) - 2px);
 	box-sizing: content-box;
 	border: 1px solid var(--color-gray-50);
 	padding: var(--spacing-100);
