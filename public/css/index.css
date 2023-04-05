@@ -24,7 +24,7 @@
 	--unit: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #c0c0c0;
@@ -37,7 +37,7 @@
 
 		--background-color: #15202b;
 	}
-}
+} */
 
 /* Global stylesheet */
 * {
@@ -52,7 +52,7 @@ body {
 	color: var(--text-color);
 	background-color: var(--background-color);
 	line-height: var(--unit);
-	font-size: 24px;
+	font-size: 18px;
 }
 html {
 	overflow-y: scroll;
@@ -79,28 +79,46 @@ footer {
 	width: 1px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: calc(var(--line-height) / var(--relative-font-size));
+	line-height: var(--line-height);
+	margin-top: calc(var(--unit) * 2);
+	margin-bottom: var(--unit);
+}
+
 h1 {
 	--line-height: calc(var(--unit) * 2);
-	font-size: calc(var(--line-height) / 1.2);
-	line-height: var(--line-height);
-	margin-top: var(--line-height);
-	margin-bottom: var(--unit);
+	--relative-font-size: 1.2;
 }
 
 h2 {
 	--line-height: calc(var(--unit) * 2);
-	font-size: calc(var(--line-height) / 1.4);
-	line-height: var(--line-height);
-	margin-top: var(--line-height);
-	margin-bottom: var(--unit);
+	--relative-font-size: 1.4;
 }
 
 h3 {
-	margin: calc(var(--unit) * 2) 0 var(--unit) 0;
+	--line-height: var(--unit);
+	--relative-font-size: 1.2;
 }
 
-h4 {
-	margin: calc(var(--unit) * 2) 0 var(--unit) 0;
+h4,
+h5,
+h6 {
+	--line-height: var(--unit);
+	--relative-font-size: 1.5;
+}
+
+h5 {
+	color: var(--color-gray-50);
+}
+
+h6 {
+	color: var(--color-gray-20);
 }
 
 p {
@@ -163,15 +181,9 @@ code {
 
 /* Header */
 .branding {
-	display: flex;
-	gap: 0.5rem;
 	align-items: start;
 	padding-top: var(--unit);
 	padding-bottom: var(--unit);
-}
-.branding__image {
-	border-radius: 50%;
-	border: 1px solid var(--color-gray-90);
 }
 .branding__title {
 	font-size: 1rem;
@@ -248,4 +260,30 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 1.5em;
+}
+
+/* Affiiliate Banner */
+.affiliate-banner { 
+  display: grid;
+  gap: 1em;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "cover disclaimer" "cover call-to-action";
+  height: calc(160 / var(--unit) * var(--unit));
+  box-sizing: content-box;
+  border: 1px solid var(--color-gray-50);
+  padding: var(--unit);
+}
+
+.affiliate-banner__cover {
+  grid-area: cover;
+}
+
+.affiliate-banner__disclaimer {
+  grid-area: disclaimer;
+  margin: 0;
+}
+
+.affiliate-banner__call-to-action {
+  grid-area: call-to-action;
 }

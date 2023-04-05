@@ -2,9 +2,6 @@
 title: Summary and Comments on Chapter 1 of "Clean Code"
 description: Summary and comments on the first chapter of Robert C. Martin's seminal book "Clean Code". I comment on why I don't like the term "clean code", why I'm cautious with The Boy Scout Rule, and how unmaintainable code is not solely introduced by developers not pushing back on tight deadlines.
 date: 2023-03-30
-tags:
-  - clean code
-  - book notes
 ---
 
 {% include "clean-code-banner.njk" %}
