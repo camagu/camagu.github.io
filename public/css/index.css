@@ -24,7 +24,7 @@
 	--unit: 1.5rem;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #c0c0c0;
@@ -37,7 +37,7 @@
 
 		--background-color: #15202b;
 	}
-} */
+}
 
 /* Global stylesheet */
 * {
@@ -263,27 +263,27 @@ h2 + .header-anchor {
 }
 
 /* Affiiliate Banner */
-.affiliate-banner { 
-  display: grid;
-  gap: 1em;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas: "cover disclaimer" "cover call-to-action";
-  height: calc(160 / var(--unit) * var(--unit));
-  box-sizing: content-box;
-  border: 1px solid var(--color-gray-50);
-  padding: var(--unit);
+.affiliate-banner {
+	display: grid;
+	gap: 1em;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto 1fr;
+	grid-template-areas: "cover disclaimer" "cover call-to-action";
+	height: calc(160 / var(--unit) * var(--unit));
+	box-sizing: content-box;
+	border: 1px solid var(--color-gray-50);
+	padding: var(--unit);
 }
 
 .affiliate-banner__cover {
-  grid-area: cover;
+	grid-area: cover;
 }
 
 .affiliate-banner__disclaimer {
-  grid-area: disclaimer;
-  margin: 0;
+	grid-area: disclaimer;
+	margin: 0;
 }
 
 .affiliate-banner__call-to-action {
-  grid-area: call-to-action;
+	grid-area: call-to-action;
 }
