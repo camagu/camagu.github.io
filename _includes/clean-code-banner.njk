@@ -4,7 +4,11 @@
   gap: 1em;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
-  grid-template-areas: "cover disclaimer" "cover call-to-action"
+  grid-template-areas: "cover disclaimer" "cover call-to-action";
+  height: calc(160 / var(--unit) * var(--unit));
+  box-sizing: content-box;
+  border: 1px solid var(--color-gray-50);
+  padding: var(--unit);
 }
 
 .affiliate-banner__cover {
